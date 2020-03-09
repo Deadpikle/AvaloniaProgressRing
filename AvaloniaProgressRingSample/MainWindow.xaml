@@ -3,19 +3,20 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AvaloniaProgressRing"
+        xmlns:progRing="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="AvaloniaProgressRing.MainWindow"
-        Title="AvaloniaProgressRing">
+        x:Class="AvaloniaProgressRingSample.MainWindow"
+        Title="AvaloniaProgressRingSample">
   <Grid>
     <TextBlock Text="Hello, world!"/>
-    <local:ProgressRing Width="40" 
-                        Height="40"
+    <progRing:ProgressRing Width="80" 
+                        Height="80"
                         IsActive="True"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
                         Foreground="Green"
                         Margin="10,20,0,0">
       
-    </local:ProgressRing>
+    </progRing:ProgressRing>
   </Grid>
 </Window>

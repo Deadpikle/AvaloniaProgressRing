@@ -1,8 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.8.0</Version>
+    <Authors>Deadpikle</Authors>
+    <Description>A progress ring control for Avalonia modeled after ModernWpf's ProgressRing control</Description>
+    <Copyright>2020 Deadpikle</Copyright>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/Deadpikle/AvaloniaProgressRing/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Deadpikle/AvaloniaProgressRing.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Avalonia, progress, ring</PackageTags>
   </PropertyGroup>
+
   <ItemGroup>
     <Compile Update="**\*.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>
@@ -10,15 +21,16 @@
     <AvaloniaResource Include="**\*.xaml">
       <SubType>Designer</SubType>
     </AvaloniaResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AvaloniaResource Remove="ContentDialog\**" />
-    <Compile Remove="ContentDialog\**" />
-    <EmbeddedResource Remove="ContentDialog\**" />
-    <None Remove="ContentDialog\**" />
+    <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="0.9.3" />
-    <PackageReference Include="Avalonia.Desktop" Version="0.9.3" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
 </Project>

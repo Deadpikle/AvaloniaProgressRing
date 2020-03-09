@@ -7,7 +7,7 @@ using System.Text;
 
 namespace AvaloniaProgressRing
 {
-    class ProgressRing : TemplatedControl
+    public class ProgressRing : TemplatedControl
     {
         private const string LargeState = ":large";
         private const string SmallState = ":small";

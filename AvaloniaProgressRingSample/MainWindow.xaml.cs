@@ -2,7 +2,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace AvaloniaProgressRing
+namespace AvaloniaProgressRingSample
 {
     public class MainWindow : Window
     {
