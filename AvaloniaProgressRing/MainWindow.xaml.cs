@@ -2,7 +2,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace AvaloniaContentDIalog
+namespace AvaloniaProgressRing
 {
     public class MainWindow : Window
     {

@@ -2,7 +2,7 @@
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 
-namespace AvaloniaContentDIalog
+namespace AvaloniaProgressRing
 {
     public class App : Application
     {
