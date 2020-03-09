@@ -12,6 +12,7 @@
     <RepositoryUrl>https://github.com/Deadpikle/AvaloniaProgressRing.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Avalonia, progress, ring</PackageTags>
+    <PackageId>Deadpikle.AvaloniaProgressRing</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
