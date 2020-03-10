@@ -10,6 +10,22 @@ Add `Deadpikle.AvaloniaProgressRing` to your NuGet references, then add the foll
 
 `<StyleInclude Source="avares://AvaloniaProgressRing/Styles/ProgressRing.xaml"/>`
 
+In your `UserControl`, add the following:
+
+```
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:progRing="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing">
+    
+    <progRing:ProgressRing Width="80" 
+                           Height="80"
+                           IsActive="True"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           Foreground="Green"
+                           Margin="10,20,0,0">
+</UserControl>
+```
+
 ## Contributing
 
 All contributions and improvements are welcome! Thanks for your involvement!
