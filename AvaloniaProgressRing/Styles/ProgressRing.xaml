@@ -4,7 +4,7 @@
     xmlns:local="clr-namespace:AvaloniaProgressRing">
   <Style Selector="Ellipse.ProgressRingEllipseStyle">
     <Setter Property="Opacity" Value="1" />
-    <Setter Property="IsVisible" Value="True" />
+    <Setter Property="IsVisible" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IsActive}" />
     <Setter Property="HorizontalAlignment" Value="Left" />
     <Setter Property="VerticalAlignment" Value="Top" />
   </Style>
