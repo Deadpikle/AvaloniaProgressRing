@@ -10,11 +10,13 @@ There are still improvements that could be made to make it more like the Windows
 
 Add `Deadpikle.AvaloniaProgressRing` to your NuGet references, then add the following to your `App.xaml` in `Application.Styles`:
 
-`<StyleInclude Source="avares://AvaloniaProgressRing/Styles/ProgressRing.xaml"/>`
+```xml
+<StyleInclude Source="avares://AvaloniaProgressRing/Styles/ProgressRing.xaml"/>
+```
 
 In your `UserControl`, add the following:
 
-```
+```xml
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:progRing="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing">
     
