@@ -30,7 +30,7 @@
               Padding="{TemplateBinding Padding}"
               MaxWidth="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MaxSideLength}"
               MaxHeight="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MaxSideLength}"
-              IsVisible="True">
+              IsVisible="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IsActive}">
             <Grid>
               <Canvas Name="E1R">
                 <Ellipse x:Name="E1"
