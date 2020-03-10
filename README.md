@@ -4,6 +4,8 @@ This project is a simple progress ring for Avalonia that's modeled off of [Moder
 
 There are still improvements that could be made to make it more like the Windows progress ring, but for now, this will be a solid start for an Avalonia progress ring.
 
+![Progress Ring GIF](img/progress-ring-gif.gif)
+
 ## Using in Your Project
 
 Add `Deadpikle.AvaloniaProgressRing` to your NuGet references, then add the following to your `App.xaml` in `Application.Styles`:
