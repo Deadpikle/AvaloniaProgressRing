@@ -9,14 +9,17 @@
         Title="AvaloniaProgressRingSample">
   <Grid>
     <TextBlock Text="Hello, world!"/>
-    <progRing:ProgressRing Width="80" 
+    <progRing:ProgressRing Width="80"
                         Height="80"
-                        IsActive="True"
+                        IsActive="{Binding ElementName=ProgressRingActive, Path=IsChecked}"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
                         Foreground="Green"
-                        Margin="10,20,0,0">
-      
-    </progRing:ProgressRing>
+                        Margin="10,20,0,0"/>
+    <CheckBox Content="Progress ring is active"
+              IsChecked="True"
+              Name="ProgressRingActive"
+              VerticalAlignment="Top"
+              Margin="20,100,0,0"/>
   </Grid>
 </Window>
