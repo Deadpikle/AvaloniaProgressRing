@@ -26,6 +26,8 @@ In your `UserControl`, add the following:
 </UserControl>
 ```
 
+Make sure that you bind to `IsActive` to show/hide the progress ring!
+
 ## Contributing
 
 All contributions and improvements are welcome! Thanks for your involvement!
