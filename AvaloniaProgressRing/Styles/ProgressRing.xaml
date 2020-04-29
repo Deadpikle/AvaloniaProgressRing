@@ -89,8 +89,11 @@
   </Style>
   <Style Selector="local|ProgressRing:active /template/ Ellipse#E1"  >
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0" Easing="SineEaseInOut" FillMode="None">
+      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0" Easing="SineEaseInOut" FillMode="Backward">
         <KeyFrame KeyTime="0">
+          <Setter Property="Opacity" Value="0"/>
+        </KeyFrame>
+        <KeyFrame KeyTime="0:0:0.01">
           <Setter Property="Opacity" Value="1"/>
         </KeyFrame>
         <KeyFrame KeyTime="0:0:3.21">
@@ -102,19 +105,16 @@
         <KeyFrame KeyTime="0:0:3.47">
           <Setter Property="Opacity" Value="0"/>
         </KeyFrame>
-        <!--<KeyFrame KeyTime="0:0:3.22">
-                <Setter Property="Opacity" Value="0"/>
-              </KeyFrame>
-              <KeyFrame KeyTime="0:0:3.47">
-                <Setter Property="Opacity" Value="0"/>
-              </KeyFrame>-->
       </Animation>
     </Style.Animations>
   </Style>
   <Style Selector="local|ProgressRing:active /template/ Ellipse#E2">
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.167" Easing="SineEaseInOut" FillMode="None">
+      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.167" Easing="SineEaseInOut" FillMode="Backward">
         <KeyFrame KeyTime="0">
+          <Setter Property="Opacity" Value="0"/>
+        </KeyFrame>
+        <KeyFrame KeyTime="0:0:0.01">
           <Setter Property="Opacity" Value="1"/>
         </KeyFrame>
         <KeyFrame KeyTime="0:0:3.21">
@@ -126,19 +126,16 @@
         <KeyFrame KeyTime="0:0:3.47">
           <Setter Property="Opacity" Value="0"/>
         </KeyFrame>
-        <!--<KeyFrame KeyTime="0:0:3.22">
-                <Setter Property="Opacity" Value="0"/>
-              </KeyFrame>
-              <KeyFrame KeyTime="0:0:3.47">
-                <Setter Property="Opacity" Value="0"/>
-              </KeyFrame>-->
       </Animation>
     </Style.Animations>
   </Style>
   <Style Selector="local|ProgressRing:active /template/ Ellipse#E3">
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.334" Easing="SineEaseInOut" FillMode="None">
+      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.334" Easing="SineEaseInOut" FillMode="Backward">
         <KeyFrame KeyTime="0">
+          <Setter Property="Opacity" Value="0"/>
+        </KeyFrame>
+        <KeyFrame KeyTime="0:0:0.01">
           <Setter Property="Opacity" Value="1"/>
         </KeyFrame>
         <KeyFrame KeyTime="0:0:3.21">
@@ -150,19 +147,16 @@
         <KeyFrame KeyTime="0:0:3.47">
           <Setter Property="Opacity" Value="0"/>
         </KeyFrame>
-        <!--<KeyFrame KeyTime="0:0:3.22">
-                <Setter Property="Opacity" Value="0"/>
-              </KeyFrame>
-              <KeyFrame KeyTime="0:0:3.47">
-                <Setter Property="Opacity" Value="0"/>
-              </KeyFrame>-->
       </Animation>
     </Style.Animations>
   </Style>
   <Style Selector="local|ProgressRing:active /template/ Ellipse#E4">
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.501" Easing="SineEaseInOut" FillMode="None">
+      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.501" Easing="SineEaseInOut" FillMode="Backward">
         <KeyFrame KeyTime="0">
+          <Setter Property="Opacity" Value="0"/>
+        </KeyFrame>
+        <KeyFrame KeyTime="0:0:0.01">
           <Setter Property="Opacity" Value="1"/>
         </KeyFrame>
         <KeyFrame KeyTime="0:0:3.21">
@@ -174,19 +168,16 @@
         <KeyFrame KeyTime="0:0:3.47">
           <Setter Property="Opacity" Value="0"/>
         </KeyFrame>
-        <!--<KeyFrame KeyTime="0:0:3.22">
-                <Setter Property="Opacity" Value="0"/>
-              </KeyFrame>
-              <KeyFrame KeyTime="0:0:3.47">
-                <Setter Property="Opacity" Value="0"/>
-              </KeyFrame>-->
       </Animation>
     </Style.Animations>
   </Style>
   <Style Selector="local|ProgressRing:active /template/ Ellipse#E5">
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.668" Easing="SineEaseInOut" FillMode="None">
+      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.668" Easing="SineEaseInOut" FillMode="Backward">
         <KeyFrame KeyTime="0">
+          <Setter Property="Opacity" Value="0"/>
+        </KeyFrame>
+        <KeyFrame KeyTime="0:0:0.01">
           <Setter Property="Opacity" Value="1"/>
         </KeyFrame>
         <KeyFrame KeyTime="0:0:3.21">
@@ -198,19 +189,16 @@
         <KeyFrame KeyTime="0:0:3.47">
           <Setter Property="Opacity" Value="0"/>
         </KeyFrame>
-        <!--<KeyFrame KeyTime="0:0:3.22">
-                <Setter Property="Opacity" Value="0"/>
-              </KeyFrame>
-              <KeyFrame KeyTime="0:0:3.47">
-                <Setter Property="Opacity" Value="0"/>
-              </KeyFrame>-->
       </Animation>
     </Style.Animations>
   </Style>
   <Style Selector="local|ProgressRing:active /template/ Ellipse#E6">
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.835" Easing="SineEaseInOut" FillMode="None">
+      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.835" Easing="SineEaseInOut" FillMode="Backward">
         <KeyFrame KeyTime="0">
+          <Setter Property="Opacity" Value="0"/>
+        </KeyFrame>
+        <KeyFrame KeyTime="0:0:0.01">
           <Setter Property="Opacity" Value="1"/>
         </KeyFrame>
         <KeyFrame KeyTime="0:0:3.21">
@@ -222,12 +210,6 @@
         <KeyFrame KeyTime="0:0:3.47">
           <Setter Property="Opacity" Value="0"/>
         </KeyFrame>
-        <!--<KeyFrame KeyTime="0:0:3.22">
-                <Setter Property="Opacity" Value="0"/>
-              </KeyFrame>
-              <KeyFrame KeyTime="0:0:3.47">
-                <Setter Property="Opacity" Value="0"/>
-              </KeyFrame>-->
       </Animation>
     </Style.Animations>
   </Style>
