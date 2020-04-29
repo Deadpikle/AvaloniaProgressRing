@@ -5,6 +5,8 @@
         xmlns:local="clr-namespace:AvaloniaProgressRing"
         xmlns:progRing="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="200"
+        Height="200"
         x:Class="AvaloniaProgressRingSample.MainWindow"
         Title="AvaloniaProgressRingSample">
   <Grid>
