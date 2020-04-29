@@ -18,8 +18,8 @@
     <None Remove="ContentDialog\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="0.9.7" />
-    <PackageReference Include="Avalonia.Desktop" Version="0.9.7" />
+    <PackageReference Include="Avalonia" Version="0.9.9" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.9.9" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AvaloniaProgressRing\AvaloniaProgressRing.csproj" />
