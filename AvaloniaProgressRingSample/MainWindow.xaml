@@ -10,18 +10,20 @@
         x:Class="AvaloniaProgressRingSample.MainWindow"
         Title="AvaloniaProgressRingSample">
   <Grid>
-    <TextBlock Text="Hello, world!"/>
+    <TextBlock Text="Avalonia Progress Ring Sample"
+               Margin="4,0,0,0"
+               FontWeight="Bold"/>
     <progRing:ProgressRing Width="80"
                         Height="80"
                         IsActive="{Binding ElementName=ProgressRingActive, Path=IsChecked}"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
                         Foreground="Green"
-                        Margin="10,20,0,0"/>
+                        Margin="10,24,0,0"/>
     <CheckBox Content="Progress ring is active"
               IsChecked="True"
               Name="ProgressRingActive"
               VerticalAlignment="Top"
-              Margin="20,100,0,0"/>
+              Margin="20,110,0,0"/>
   </Grid>
 </Window>
