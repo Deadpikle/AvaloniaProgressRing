@@ -4,6 +4,8 @@ This project is a simple progress ring for Avalonia that's modeled off of [Moder
 
 There are still improvements that could be made to make it more like the Windows progress ring, but for now, this will be a solid start for an Avalonia progress ring.
 
+**Note: The latest `master` version of Avalonia has the new `KeySpline` property on animation `KeyFrame` objects. This allowed us to mimic the ModernWpf progress ring almost exactly; so, when 0.10 comes out for Avalonia, there will be an even better progress ring. See the feature/latest-avalonia branch for that info.**
+
 [![NuGet](https://img.shields.io/nuget/v/Deadpikle.AvaloniaProgressRing.svg?style=flat-square)](https://www.nuget.org/packages/Deadpikle.AvaloniaProgressRing/)
 [![NuGet](https://img.shields.io/nuget/dt/Deadpikle.AvaloniaProgressRing.svg?style=flat-square)](https://www.nuget.org/packages/Deadpikle.AvaloniaProgressRing/)
 [![NuGet](https://img.shields.io/github/issues/Deadpikle/AvaloniaProgressRing.svg?style=flat-square)](https://github.com/Deadpikle/AvaloniaProgressRing/issues)
