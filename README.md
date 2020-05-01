@@ -12,6 +12,10 @@ There are still improvements that could be made to make it more like the Windows
 
 ![Progress Ring GIF](img/progress-ring-gif.gif)
 
+**Progress ring on latest Avalonia (0.10 -- unreleased at this point):**
+
+![Progress Ring GIF](img/new-avalonia-master-ring.gif)
+
 ## Using in Your Project
 
 Add `Deadpikle.AvaloniaProgressRing` to your NuGet references, then add the following to your `App.xaml` in `Application.Styles`:
