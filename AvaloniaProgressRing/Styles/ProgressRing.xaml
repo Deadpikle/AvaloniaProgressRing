@@ -88,7 +88,7 @@
   </Style>
   <Style Selector="local|ProgressRing:active /template/ Ellipse#E1"  >
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0" FillMode="None">
+      <Animation Duration="0:0:4.4" IterationCount="Infinite" Delay="0" FillMode="None">
         <KeyFrame KeyTime="0">
           <Setter Property="Opacity" Value="1"/>
         </KeyFrame>
@@ -106,7 +106,7 @@
   </Style>
   <Style Selector="local|ProgressRing:active /template/ Ellipse#E2">
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.167" FillMode="None">
+      <Animation Duration="0:0:4.4" IterationCount="Infinite" Delay="0:0:0.167" FillMode="None">
         <KeyFrame KeyTime="0">
           <Setter Property="Opacity" Value="1"/>
         </KeyFrame>
@@ -124,7 +124,7 @@
   </Style>
   <Style Selector="local|ProgressRing:active /template/ Ellipse#E3">
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.334"  FillMode="None">
+      <Animation Duration="0:0:4.4" IterationCount="Infinite" Delay="0:0:0.334"  FillMode="None">
         <KeyFrame KeyTime="0">
           <Setter Property="Opacity" Value="1"/>
         </KeyFrame>
@@ -142,7 +142,7 @@
   </Style>
   <Style Selector="local|ProgressRing:active /template/ Ellipse#E4">
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.501" FillMode="None">
+      <Animation Duration="0:0:4.4" IterationCount="Infinite" Delay="0:0:0.501" FillMode="None">
         <KeyFrame KeyTime="0">
           <Setter Property="Opacity" Value="1"/>
         </KeyFrame>
@@ -160,7 +160,7 @@
   </Style>
   <Style Selector="local|ProgressRing:active /template/ Ellipse#E5">
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.668" FillMode="None">
+      <Animation Duration="0:0:4.4" IterationCount="Infinite" Delay="0:0:0.668" FillMode="None">
         <KeyFrame KeyTime="0">
           <Setter Property="Opacity" Value="1"/>
         </KeyFrame>
@@ -178,7 +178,7 @@
   </Style>
   <Style Selector="local|ProgressRing:active /template/ Ellipse#E6">
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.835" FillMode="None">
+      <Animation Duration="0:0:4.4" IterationCount="Infinite" Delay="0:0:0.835" FillMode="None">
         <KeyFrame KeyTime="0">
           <Setter Property="Opacity" Value="1"/>
         </KeyFrame>
@@ -199,7 +199,7 @@
       <Setter Property="Background" Value="LightBlue"/>
     </Style.Setters>-->
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.0"
+      <Animation Duration="0:0:4.4" IterationCount="Infinite" Delay="0:0:0.0"
                  FillMode="None">
         <KeyFrame KeyTime="0" KeySpline="0.13,0.21,0.1,0.7">
           <Setter Property="RotateTransform.Angle" Value="-110"/>
@@ -230,7 +230,7 @@
   </Style>
   <Style Selector="local|ProgressRing:active /template/ Canvas#E2R">
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.167"
+      <Animation Duration="0:0:4.4" IterationCount="Infinite" Delay="0:0:0.167"
                   FillMode="None">
         <KeyFrame KeyTime="0" KeySpline="0.13,0.21,0.1,0.7">
           <Setter Property="RotateTransform.Angle" Value="-116"/>
@@ -264,7 +264,7 @@
       <Setter Property="IsVisible" Value="True"/>
     </Style.Setters>
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.334"
+      <Animation Duration="0:0:4.4" IterationCount="Infinite" Delay="0:0:0.334"
                  FillMode="None">
         <KeyFrame KeyTime="0" KeySpline="0.13,0.21,0.1,0.7">
           <Setter Property="RotateTransform.Angle" Value="-122"/>
@@ -298,7 +298,7 @@
       <Setter Property="IsVisible" Value="True"/>
     </Style.Setters>
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.501"
+      <Animation Duration="0:0:4.4" IterationCount="Infinite" Delay="0:0:0.501"
                  FillMode="None">
         <KeyFrame KeyTime="0" KeySpline="0.13,0.21,0.1,0.7">
           <Setter Property="RotateTransform.Angle" Value="-128"/>
@@ -332,7 +332,7 @@
       <Setter Property="IsVisible" Value="True"/>
     </Style.Setters>
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.668"
+      <Animation Duration="0:0:4.4" IterationCount="Infinite" Delay="0:0:0.668"
                  FillMode="None">
         <KeyFrame KeyTime="0" KeySpline="0.13,0.21,0.1,0.7">
           <Setter Property="RotateTransform.Angle" Value="-134"/>
@@ -366,7 +366,7 @@
       <Setter Property="IsVisible" Value="True"/>
     </Style.Setters>
     <Style.Animations>
-      <Animation Duration="0:0:3.47" IterationCount="Infinite" Delay="0:0:0.835"
+      <Animation Duration="0:0:4.4" IterationCount="Infinite" Delay="0:0:0.835"
                  FillMode="None">
         <KeyFrame KeyTime="0" KeySpline="0.13,0.21,0.1,0.7">
           <Setter Property="RotateTransform.Angle" Value="-140"/>
