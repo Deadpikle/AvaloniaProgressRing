@@ -14,7 +14,7 @@ There are still improvements that could be made to make it more like the Windows
 
 **Progress ring on latest Avalonia (0.10 -- unreleased at this point):**
 
-![Progress Ring GIF](img/new-avalonia-master-ring.gif)
+![Progress Ring GIF](img/avalonia-60-fps.gif)
 
 ## Using in Your Project
 
