@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1;net5</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <Compile Update="**\*.xaml.cs">
@@ -12,14 +12,9 @@
     </AvaloniaResource>
   </ItemGroup>
   <ItemGroup>
-    <AvaloniaResource Remove="ContentDialog\**" />
-    <Compile Remove="ContentDialog\**" />
-    <EmbeddedResource Remove="ContentDialog\**" />
-    <None Remove="ContentDialog\**" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Avalonia" Version="0.9.10" />
-    <PackageReference Include="Avalonia.Desktop" Version="0.9.10" />
+    <PackageReference Include="Avalonia" Version="0.10.0" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.0" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AvaloniaProgressRing\AvaloniaProgressRing.csproj" />

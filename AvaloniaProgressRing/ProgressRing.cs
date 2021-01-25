@@ -82,9 +82,9 @@ namespace AvaloniaProgressRing
         #endregion
 
 
-        protected override void OnTemplateApplied(TemplateAppliedEventArgs e)
+        protected override void OnApplyTemplate(TemplateAppliedEventArgs e)
         {
-            base.OnTemplateApplied(e);
+            base.OnApplyTemplate(e);
             double maxSideLength = Math.Min(this.Width, this.Height);
             double ellipseDiameter = 0.1 * maxSideLength;
             if (maxSideLength <= 40)
