@@ -1,18 +1,6 @@
 # Avalonia Progress Ring
 
-This project is a simple progress ring for Avalonia that's modeled off of [ModernWpf's](https://github.com/Kinnara/ModernWpf) progress ring. Credit to ModernWpf for the initial code and design!
-
-There are still improvements that could be made to make it more like the Windows progress ring (that can't fully be done in Avalonia 0.9.x due to lack of `Animation` `KeySpline`), but for now, this will be a solid start for an Avalonia progress ring.
-
-**Note: The latest `master` version of Avalonia has the new `KeySpline` property on animation `KeyFrame` objects as well as 60fps rendering. This allowed us to mimic the ModernWpf progress ring almost exactly; so, whenever Avalonia 0.10 comes out, there will be an even better progress ring! See the feature/latest-avalonia branch for those changes.**
-
-[![NuGet](https://img.shields.io/nuget/v/Deadpikle.AvaloniaProgressRing.svg?style=flat-square)](https://www.nuget.org/packages/Deadpikle.AvaloniaProgressRing/)
-[![NuGet](https://img.shields.io/nuget/dt/Deadpikle.AvaloniaProgressRing.svg?style=flat-square)](https://www.nuget.org/packages/Deadpikle.AvaloniaProgressRing/)
-[![NuGet](https://img.shields.io/github/issues/Deadpikle/AvaloniaProgressRing.svg?style=flat-square)](https://github.com/Deadpikle/AvaloniaProgressRing/issues)
-
-![Progress Ring GIF](img/progress-ring-gif.gif)
-
-**Progress ring on latest Avalonia (0.10 -- unreleased at this point):**
+This project is a simple progress ring for Avalonia that's modeled off of [ModernWpf's](https://github.com/Kinnara/ModernWpf) progress ring. Credit to ModernWpf for the initial code and design! v0.8.x works on Avalonia 0.9.x, and v0.9.x is compatible with Avalonia 0.10.x.
 
 ![Progress Ring GIF](img/avalonia-60-fps.gif)
 
@@ -29,7 +17,6 @@ In your `UserControl`, add the following:
 ```xml
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:progRing="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing">
-    
     <progRing:ProgressRing Width="80" 
                            Height="80"
                            IsActive="True"
