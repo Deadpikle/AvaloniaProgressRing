@@ -26,7 +26,7 @@ In your `UserControl`, add the following:
                            HorizontalAlignment="Left"
                            VerticalAlignment="Top"
                            Foreground="Green"
-                           Margin="10,20,0,0">
+                           Margin="10,20,0,0"/>
 </UserControl>
 ```
 
