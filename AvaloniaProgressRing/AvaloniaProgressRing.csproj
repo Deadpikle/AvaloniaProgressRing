@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netcoreapp3.1;net5</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.9.1</Version>
+    <Version>0.9.2</Version>
     <Authors>Deadpikle</Authors>
     <Description>A progress ring control for Avalonia modeled after ModernWpf's ProgressRing control</Description>
     <Copyright>2021 Deadpikle</Copyright>
@@ -25,7 +25,7 @@
     <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="0.10.6" />
+    <PackageReference Include="Avalonia" Version="0.10.8" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\LICENSE.md">
