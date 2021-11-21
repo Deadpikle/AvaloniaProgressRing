@@ -13,6 +13,8 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>Avalonia, progress, ring</PackageTags>
     <PackageId>Deadpikle.AvaloniaProgressRing</PackageId>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
