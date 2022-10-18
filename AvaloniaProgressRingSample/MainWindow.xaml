@@ -13,13 +13,20 @@
     <TextBlock Text="Avalonia Progress Ring Sample"
                Margin="4,0,0,0"
                FontWeight="Bold"/>
-    <progRing:ProgressRing Width="80"
-                        Height="80"
-                        IsActive="{Binding ElementName=ProgressRingActive, Path=IsChecked}"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Top"
-                        Foreground="Green"
-                        Margin="10,24,0,0"/>
+	  <progRing:ProgressRing Width="80"
+							 Height="80"
+							 IsActive="{Binding ElementName=ProgressRingActive, Path=IsChecked}"
+							 HorizontalAlignment="Left"
+							 VerticalAlignment="Top"
+							 Foreground="Green"
+							 Margin="10,24,0,0">
+          <progRing:ProgressRing.RenderTransform>
+              <TransformGroup>
+                  <RotateTransform/>
+                  <TranslateTransform />
+              </TransformGroup>
+          </progRing:ProgressRing.RenderTransform>
+      </progRing:ProgressRing>
     <CheckBox Content="Progress ring is active"
               IsChecked="True"
               Name="ProgressRingActive"
