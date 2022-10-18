@@ -3,8 +3,8 @@
              xmlns:progring="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing"
              x:Class="AvaloniaProgressRingSample.App">
     <Application.Styles>
-        <StyleInclude Source="avares://Avalonia.Themes.Default/DefaultTheme.xaml"/>
-        <StyleInclude Source="avares://Avalonia.Themes.Default/Accents/BaseLight.xaml"/>
+        <SimpleTheme Mode="Light" />
+        <StyleInclude Source="avares://Avalonia.Themes.Simple/Accents/BaseLight.xaml"/>
         <StyleInclude Source="avares://AvaloniaProgressRing/Styles/ProgressRing.xaml"/>
     </Application.Styles>
 </Application>
