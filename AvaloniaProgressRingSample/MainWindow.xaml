@@ -19,14 +19,7 @@
 							 HorizontalAlignment="Left"
 							 VerticalAlignment="Top"
 							 Foreground="Green"
-							 Margin="10,24,0,0">
-          <progRing:ProgressRing.RenderTransform>
-              <TransformGroup>
-                  <RotateTransform/>
-                  <TranslateTransform />
-              </TransformGroup>
-          </progRing:ProgressRing.RenderTransform>
-      </progRing:ProgressRing>
+							 Margin="10,24,0,0"/>
     <CheckBox Content="Progress ring is active"
               IsChecked="True"
               Name="ProgressRingActive"

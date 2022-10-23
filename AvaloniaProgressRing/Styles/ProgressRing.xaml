@@ -31,6 +31,12 @@
               MaxWidth="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MaxSideLength}"
               MaxHeight="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MaxSideLength}"
               IsVisible="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IsActive}">
+            <Border.RenderTransform>
+              <TransformGroup>
+                  <RotateTransform/>
+                  <TranslateTransform/>
+              </TransformGroup>
+            </Border.RenderTransform>
             <Grid>
               <Canvas Name="E1R">
                 <Ellipse x:Name="E1"
