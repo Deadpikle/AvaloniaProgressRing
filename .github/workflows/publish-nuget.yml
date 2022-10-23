@@ -2,7 +2,8 @@ name: publish to nuget
 on:
   push:
     branches:
-      - main # Your default release branch
+      - main # Used for stable releases
+      - develop # Used for preview releases
 jobs:
   publish:
     name: list on nuget
