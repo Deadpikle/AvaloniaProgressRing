@@ -15,7 +15,22 @@ updates:
       interval: "daily"
     assignees:
       - "Deadpikle"
-    target-branch: "develop"
+    target-branch: "main"
+    commit-message:
+      # Prefix all commit messages
+      prefix: "[Dependabot]"
+    labels:
+      - "dependabot"
+      - "awaiting triage"
+    reviewers:
+      - "Deadpikle"
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/AvaloniaProgressRingSample" # Location of package manifests
+    schedule:
+      interval: "daily"
+    assignees:
+      - "Deadpikle"
+    target-branch: "main"
     commit-message:
       # Prefix all commit messages
       prefix: "[Dependabot]"
