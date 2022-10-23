@@ -15,7 +15,7 @@ jobs:
         uses: microsoft/setup-msbuild@v1.1.3
         
       - name: Setup dotnet 5.0
-        uses: actions/setup-dotnet@v3.0.1
+        uses: actions/setup-dotnet@v3.0.2
         with:
           dotnet-version: | 
             5.0.x
