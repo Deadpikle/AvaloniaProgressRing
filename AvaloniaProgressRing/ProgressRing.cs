@@ -98,13 +98,6 @@ namespace AvaloniaProgressRing
             UpdateVisualStates();
         }
 
-        public override void Render(DrawingContext context)
-        {
-            base.Render(context);
-
-            UpdateVisualStates();
-        }
-
         private void UpdateVisualStates()
         {
             PseudoClasses.Remove(ActiveState);
