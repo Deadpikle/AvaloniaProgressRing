@@ -39,7 +39,9 @@ namespace AvaloniaProgressRing
 
 
         public static readonly StyledProperty<bool> IsActiveProperty =
-            AvaloniaProperty.Register<ProgressRing, bool>(nameof(IsActive), defaultValue: true, notifying: OnIsActiveChanged);
+            AvaloniaProperty.Register<ProgressRing, bool>(
+                nameof(IsActive), 
+                defaultValue: true);
 
         private static void OnIsActiveChanged(AvaloniaObject obj, bool arg2)
         {
@@ -96,6 +98,16 @@ namespace AvaloniaProgressRing
             MaxSideLength = maxSideLength;
             EllipseOffset = new Thickness(0, maxSideLength / 2 - ellipseDiameter, 0, 0);
             UpdateVisualStates();
+        }
+
+        protected override void OnPropertyChanged(AvaloniaPropertyChangedEventArgs change)
+        {
+            base.OnPropertyChanged(change);
+
+            if (change.Property == IsActiveProperty)
+            {
+                UpdateVisualStates();
+            }
         }
 
         private void UpdateVisualStates()
