@@ -9,10 +9,15 @@
         Height="200"
         x:Class="AvaloniaProgressRingSample.MainWindow"
         Title="AvaloniaProgressRingSample">
-  <Grid>
+  <StackPanel Orientation="Vertical">
     <TextBlock Text="Avalonia Progress Ring Sample"
-               Margin="4,0,0,0"
+               Margin="4,8,0,0"
                FontWeight="Bold"/>
+    <CheckBox Content="Progress ring is active"
+              IsChecked="True"
+              Name="ProgressRingActive"
+              VerticalAlignment="Top"
+              Margin="20,5,0,0"/>
 	  <progRing:ProgressRing Width="80"
 							 Height="80"
 							 IsActive="{Binding ElementName=ProgressRingActive, Path=IsChecked}"
@@ -20,10 +25,5 @@
 							 VerticalAlignment="Top"
 							 Foreground="Green"
 							 Margin="10,24,0,0"/>
-    <CheckBox Content="Progress ring is active"
-              IsChecked="True"
-              Name="ProgressRingActive"
-              VerticalAlignment="Top"
-              Margin="20,110,0,0"/>
-  </Grid>
+  </StackPanel>
 </Window>
