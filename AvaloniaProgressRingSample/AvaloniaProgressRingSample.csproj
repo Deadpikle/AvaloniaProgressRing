@@ -12,12 +12,12 @@
     </AvaloniaResource>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="11.0.0-rc1.1" />
-    <PackageReference Include="Avalonia.Desktop" Version="11.0.0-rc1.1" />
-    <PackageReference Include="Avalonia.Themes.Simple" Version="11.0.0-rc1.1" />
+    <PackageReference Include="Avalonia" Version="11.0.0-rc2.2" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.0.0-rc2.2" />
+    <PackageReference Include="Avalonia.Themes.Simple" Version="11.0.0-rc2.2" />
   </ItemGroup>
   <ItemGroup Condition="'$(Configuration)' == 'Debug'">
-    <PackageReference Include="Avalonia.Diagnostics" Version="11.0.0-rc1.1" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="11.0.0-rc2.2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AvaloniaProgressRing\AvaloniaProgressRing.csproj" />
