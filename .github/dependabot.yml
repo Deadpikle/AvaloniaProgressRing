@@ -15,7 +15,7 @@ updates:
       interval: "daily"
     assignees:
       - "Deadpikle"
-    target-branch: "main"
+    target-branch: "develop"
     commit-message:
       # Prefix all commit messages
       prefix: "[Dependabot]"
@@ -30,7 +30,7 @@ updates:
       interval: "daily"
     assignees:
       - "Deadpikle"
-    target-branch: "main"
+    target-branch: "develop"
     commit-message:
       # Prefix all commit messages
       prefix: "[Dependabot]"
