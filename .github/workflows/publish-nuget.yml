@@ -31,7 +31,7 @@ jobs:
     name: list on nuget
     runs-on: windows-latest
     needs: build
-    if: github.ref == 'refs/heads/develop'
+    if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v4
         
