@@ -1,26 +1,48 @@
-name: publish to nuget
+name: Build and publish to nuget
 on:
   push:
     branches:
       - main # Used for stable releases
       - develop # Used for preview releases
+  pull_request:
 jobs:
-  publish:
-    name: list on nuget
-    runs-on: windows-latest
+  build:
+    name: Build check for all branches
+    runs-on: ${{ matrix.os }}
+    strategy:
+        matrix:
+            os: [windows-latest, macos-latest, ubuntu-latest]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         
-      - name: Add MSBuild to PATH
-        uses: microsoft/setup-msbuild@v1.3.1
-        
-      - name: Setup dotnet 5 and 6 and 7
+      - name: Setup dotnet 5-8
         uses: actions/setup-dotnet@v3.2.0
         with:
           dotnet-version: | 
             5.0.x
             6.0.x
             7.0.x
+            8.0.x
+
+      - name: build AvaloniaProgressRing in Release on each OS as a smoke test (inc. PR's)
+        run: dotnet build ${{ github.workspace }}/AvaloniaProgressRing/AvaloniaProgressRing.csproj --configuration Release
+
+  publish:
+    name: list on nuget
+    runs-on: windows-latest
+    needs: build
+    if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+        
+      - name: Setup dotnet 5-8
+        uses: actions/setup-dotnet@v3.2.0
+        with:
+          dotnet-version: | 
+            5.0.x
+            6.0.x
+            7.0.x
+            8.0.x
 
       # Required for a specific dotnet version that doesn't come with ubuntu-latest / windows-latest
       # Visit bit.ly/2synnZl to see the list of SDKs that are pre-installed with ubuntu-latest / windows-latest
@@ -29,13 +51,13 @@ jobs:
       #   with:
       #     dotnet-version: 3.1.100
       - name: build AvaloniaProgressRing in Release
-        run: dotnet build AvaloniaProgressRing/AvaloniaProgressRing.csproj --configuration Release
+        run: dotnet build ${{ github.workspace }}/AvaloniaProgressRing/AvaloniaProgressRing.csproj --configuration Release
       
       # Publish
       - name: publish Deadpikle.AvaloniaProgressRing on version change
         uses: nitz/publish-nuget@60fd3adf9d9eecc3bbf8a98738734d3061347172
         with:
-          PROJECT_FILE_PATH: AvaloniaProgressRing/AvaloniaProgressRing.csproj # Relative to repository root
+          PROJECT_FILE_PATH: ${{ github.workspace }}/AvaloniaProgressRing/AvaloniaProgressRing.csproj # Relative to repository root
           # VERSION_FILE_PATH: Directory.Build.props # Filepath with version info, relative to repository root. Defaults to project file
           # VERSION_REGEX: <Version>(.*)<\/Version> # Regex pattern to extract version info in a capturing group
           TAG_COMMIT: true # Flag to enable / disalge git tagging
@@ -43,5 +65,3 @@ jobs:
           NUGET_KEY: ${{secrets.NUGET_API_KEY}} # nuget.org API key
           PACKAGE_NAME: Deadpikle.AvaloniaProgressRing
           INCLUDE_SYMBOLS: true
-        
-     
