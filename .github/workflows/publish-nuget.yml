@@ -2,7 +2,9 @@ name: Build and publish to nuget
 on:
   push:
     branches:
-      - "*"
+      - main # Used for stable releases
+      - develop # Used for preview releases
+  pull_request:
 jobs:
   build:
     name: Build check for all branches
