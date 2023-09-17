@@ -8,6 +8,7 @@
         Width="200"
         Height="200"
         x:Class="AvaloniaProgressRingSample.MainWindow"
+        x:CompileBindings="True"
         Title="AvaloniaProgressRingSample">
   <StackPanel Orientation="Vertical">
     <TextBlock Text="Avalonia Progress Ring Sample"
