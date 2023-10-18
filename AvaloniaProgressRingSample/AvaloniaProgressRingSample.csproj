@@ -1,11 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFrameworks>net8.0</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.0.4" />
-    <PackageReference Include="Avalonia.Desktop" Version="11.0.4" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.0.5" />
     <PackageReference Include="Avalonia.Themes.Simple" Version="11.0.4" />
   </ItemGroup>
   <ItemGroup Condition="'$(Configuration)' == 'Debug'">
