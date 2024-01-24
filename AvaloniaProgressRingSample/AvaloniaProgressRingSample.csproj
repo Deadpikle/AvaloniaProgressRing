@@ -2,14 +2,22 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFrameworks>net8.0</TargetFrameworks>
+    <!--Avalonia doesn't support TrimMode=link currently,but we are working on that https://github.com/AvaloniaUI/Avalonia/issues/6892 -->
+    <TrimMode>partial</TrimMode>
+    <PublishTrimmed>true</PublishTrimmed>
+    <SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>
+    <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <PublishAot>true</PublishAot>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="11.0.6" />
-    <PackageReference Include="Avalonia.Desktop" Version="11.0.6" />
-    <PackageReference Include="Avalonia.Themes.Simple" Version="11.0.6" />
+    <PackageReference Include="Avalonia" Version="11.0.7" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.0.7" />
+    <PackageReference Include="Avalonia.Themes.Simple" Version="11.0.7" />
   </ItemGroup>
   <ItemGroup Condition="'$(Configuration)' == 'Debug'">
-    <PackageReference Include="Avalonia.Diagnostics" Version="11.0.6" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="11.0.7" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AvaloniaProgressRing\AvaloniaProgressRing.csproj" />
