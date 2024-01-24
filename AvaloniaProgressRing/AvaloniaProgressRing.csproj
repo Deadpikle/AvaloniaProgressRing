@@ -3,10 +3,10 @@
   <PropertyGroup>
     <TargetFrameworks>net5;netstandard2.0;net6.0;net7.0;net8.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.10.4</Version>
+    <Version>0.10.5</Version>
     <Authors>Deadpikle</Authors>
     <Description>A progress ring control for Avalonia modeled after ModernWpf's ProgressRing control</Description>
-    <Copyright>2023 Deadpikle</Copyright>
+    <Copyright>2024 Deadpikle</Copyright>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/Deadpikle/AvaloniaProgressRing/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Deadpikle/AvaloniaProgressRing.git</RepositoryUrl>
