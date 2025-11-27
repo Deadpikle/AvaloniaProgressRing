@@ -13,9 +13,32 @@ jobs:
         matrix:
             os: [windows-latest, macos-latest, ubuntu-latest]
     steps:
+      - name: Install NuGet / .NET for macOS as workaround
+        run: |
+         if [ "$RUNNER_OS" == "Linux" ]; then
+            echo ''
+         elif [ "$RUNNER_OS" == "Windows" ]; then
+            echo ''
+         else
+            nuget help || brew install nuget -q
+            softwareupdate --install-rosetta --agree-to-license
+            wget https://dot.net/v1/dotnet-install.sh
+            chmod +x dotnet-install.sh
+            ./dotnet-install.sh --architecture arm64 --channel 6.0
+            ./dotnet-install.sh --architecture x64 --channel 6.0
+            ./dotnet-install.sh --architecture arm64 --channel 7.0
+            ./dotnet-install.sh --architecture x64 --channel 7.0
+            ./dotnet-install.sh --architecture arm64 --channel 8.0
+            ./dotnet-install.sh --architecture x64 --channel 8.0
+            ./dotnet-install.sh --architecture arm64 --channel 9.0
+            ./dotnet-install.sh --architecture x64 --channel 9.0
+            ./dotnet-install.sh --architecture arm64 --channel 10.0
+            ./dotnet-install.sh --architecture x64 --channel 10.0
+         fi
+        shell: bash
       - uses: actions/checkout@v4
         
-      - name: Setup dotnet 5-9
+      - name: Setup dotnet 5-10
         uses: actions/setup-dotnet@v4.1.0
         with:
           dotnet-version: | 
@@ -24,6 +47,7 @@ jobs:
             7.0.x
             8.0.x
             9.0.x
+            10.0.x
 
       - name: build AvaloniaProgressRing in Release on each OS as a smoke test (inc. PR's)
         run: dotnet build ${{ github.workspace }}/AvaloniaProgressRing/AvaloniaProgressRing.csproj --configuration Release
@@ -36,7 +60,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         
-      - name: Setup dotnet 5-9
+      - name: Setup dotnet 5-10
         uses: actions/setup-dotnet@v4.1.0
         with:
           dotnet-version: | 
@@ -45,6 +69,7 @@ jobs:
             7.0.x
             8.0.x
             9.0.x
+            10.0.x
 
       # Required for a specific dotnet version that doesn't come with ubuntu-latest / windows-latest
       # Visit bit.ly/2synnZl to see the list of SDKs that are pre-installed with ubuntu-latest / windows-latest
