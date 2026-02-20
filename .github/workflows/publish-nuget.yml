@@ -4,6 +4,7 @@ on:
     branches:
       - main # Used for stable releases
       - develop # Used for preview releases
+      - feature/avalonia-12 # Used for preview releases
   pull_request:
 jobs:
   build:
