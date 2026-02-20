@@ -2,20 +2,6 @@
 
   <PropertyGroup>
     <TargetFrameworks>net11.0</TargetFrameworks>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.10.12</Version>
-    <Authors>Deadpikle</Authors>
-    <Description>A progress ring control for Avalonia modeled after ModernWpf's ProgressRing control</Description>
-    <Copyright>2025 Deadpikle</Copyright>
-    <PackageProjectUrl>https://github.com/Deadpikle/AvaloniaProgressRing/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/Deadpikle/AvaloniaProgressRing.git</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>Avalonia, progress, ring</PackageTags>
-    <PackageId>Deadpikle.AvaloniaProgressRing</PackageId>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
     <IsTrimmable>true</IsTrimmable>
     <TrimMode>partial</TrimMode>
     <IsAotCompatible>true</IsAotCompatible>
