@@ -34,7 +34,7 @@ Make sure that you bind to `IsActive` to show/hide the progress ring!
 
 ## Contributing
 
-All contributions and improvements are welcome! Thanks for your involvement!
+All contributions and improvements are welcome with one exception: no contributions made via AI or AI tools will be accepted at this time. Thanks for your involvement!
 
 ## License
 
