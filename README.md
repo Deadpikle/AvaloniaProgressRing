@@ -1,3 +1,35 @@
+
+<div align="right">
+  <details>
+    <summary >🌐 Language</summary>
+    <div>
+      <div align="center">
+        <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=en">English</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=zh-CN">简体中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=zh-TW">繁體中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=ja">日本語</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=ko">한국어</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=hi">हिन्दी</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=th">ไทย</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=fr">Français</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=de">Deutsch</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=es">Español</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=it">Italiano</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=ru">Русский</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=pt">Português</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=nl">Nederlands</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=pl">Polski</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=ar">العربية</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=fa">فارسی</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=tr">Türkçe</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=vi">Tiếng Việt</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=id">Bahasa Indonesia</a>
+        | <a href="https://openaitx.github.io/view.html?user=Deadpikle&project=AvaloniaProgressRing&lang=as">অসমীয়া</
+      </div>
+    </div>
+  </details>
+</div>
+
 # Avalonia Progress Ring
 
 [![NuGet](https://img.shields.io/nuget/v/Deadpikle.AvaloniaProgressRing.svg?style=flat-square)](https://www.nuget.org/packages/Deadpikle.AvaloniaProgressRing/) [![NuGet](https://img.shields.io/nuget/vpre/Deadpikle.AvaloniaProgressRing.svg?style=flat-square&label=nuget-pre)](https://www.nuget.org/packages/Deadpikle.AvaloniaProgressRing/) [![NuGet](https://img.shields.io/nuget/dt/Deadpikle.AvaloniaProgressRing.svg?style=flat-square)](https://www.nuget.org/packages/Deadpikle.AvaloniaProgressRing/) [![NuGet](https://img.shields.io/github/issues/Deadpikle/AvaloniaProgressRing.svg?style=flat-square)](https://github.com/Deadpikle/AvaloniaProgressRing/issues/)
