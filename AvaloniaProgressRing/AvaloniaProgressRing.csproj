@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.11.0-preview20260220</Version>
+    <Version>0.11.0</Version>
     <Authors>Deadpikle</Authors>
     <Description>A progress ring control for Avalonia modeled after ModernWpf's ProgressRing control</Description>
     <Copyright>2026 Deadpikle</Copyright>
