@@ -16,6 +16,17 @@ namespace AvaloniaProgressRingSample
         public static AppBuilder BuildAvaloniaApp()
             => AppBuilder.Configure<App>()
                 .UsePlatformDetect()
-                .LogToTrace();
+                .LogToTrace()
+                .With(new AvaloniaNativePlatformOptions
+                {
+                    // https://github.com/AvaloniaUI/Avalonia/issues/20971
+                    RenderingMode =
+                    [
+                        // put OpenGL first, to have higher priority over Metal
+                        AvaloniaNativeRenderingMode.OpenGl,
+                        AvaloniaNativeRenderingMode.Metal,
+                        AvaloniaNativeRenderingMode.Software
+                    ]
+                });
     }
 }
