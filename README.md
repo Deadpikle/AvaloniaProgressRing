@@ -15,7 +15,7 @@ Add `Deadpikle.AvaloniaProgressRing` to your NuGet references, then add the foll
 <StyleInclude Source="avares://AvaloniaProgressRing/Styles/ProgressRing.xaml"/>
 ```
 
-In your `UserControl`, add the following:
+In your `UserControl`, add something like to the following:
 
 ```xml
 <UserControl xmlns="https://github.com/avaloniaui"
@@ -26,6 +26,23 @@ In your `UserControl`, add the following:
                            HorizontalAlignment="Left"
                            VerticalAlignment="Top"
                            Foreground="Green"
+                           Margin="10,20,0,0"/>
+</UserControl>
+```
+
+You can also manage the ellipse sizing and margins yourself. To do so, you must set `ManuallyManageSizing` to `True`. See the sample for more details. There's not a lot of fancy math done for you, so set the `EllipseDiameter` to your desired size and then fiddle with `Width`/`Height`/`EllipseOffset` until you get things looking the way you want it.
+```xml
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:progRing="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing">
+    <progRing:ProgressRing Width="80" 
+                           Height="80"
+                           IsActive="True"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           Foreground="Green"
+                           ManuallyManageSizing="True"
+                           EllipseDiameter="35"
+                           EllipseOffset="0,200,0,0"
                            Margin="10,20,0,0"/>
 </UserControl>
 ```
