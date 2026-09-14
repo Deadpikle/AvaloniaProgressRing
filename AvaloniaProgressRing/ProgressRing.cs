@@ -16,8 +16,6 @@ namespace AvaloniaProgressRing
         private const string ActiveState = ":active";
 
         private double _maxSideLength = 10;
-        private double _ellipseDiameter = 10;
-        private Thickness _ellipseOffset = new Thickness(2);
 
         static ProgressRing()
         {
@@ -29,14 +27,11 @@ namespace AvaloniaProgressRing
         {
         }
 
-        #region IsActive
-
         public bool IsActive
         {
             get => (bool)GetValue(IsActiveProperty);
             set => SetValue(IsActiveProperty, value);
         }
-
 
         public static readonly StyledProperty<bool> IsActiveProperty =
             AvaloniaProperty.Register<ProgressRing, bool>(
@@ -59,44 +54,54 @@ namespace AvaloniaProgressRing
             private set { SetAndRaise(MaxSideLengthProperty, ref _maxSideLength, value); }
         }
 
-        public static readonly DirectProperty<ProgressRing, double> EllipseDiameterProperty =
-            AvaloniaProperty.RegisterDirect<ProgressRing, double>(
+        public static readonly StyledProperty<double> EllipseDiameterProperty =
+            AvaloniaProperty.Register<ProgressRing, double>(
                nameof(EllipseDiameter),
-               o => o.EllipseDiameter);
+               defaultValue: 10);
 
         public double EllipseDiameter
         {
-            get { return _ellipseDiameter; }
-            private set { SetAndRaise(EllipseDiameterProperty, ref _ellipseDiameter, value); }
+            get => GetValue(EllipseDiameterProperty);
+            set { SetValue(EllipseDiameterProperty, value); }
         }
 
-        public static readonly DirectProperty<ProgressRing, Thickness> EllipseOffsetProperty =
-            AvaloniaProperty.RegisterDirect<ProgressRing, Thickness>(
+        public static readonly StyledProperty<Thickness> EllipseOffsetProperty =
+            AvaloniaProperty.Register<ProgressRing, Thickness>(
                nameof(EllipseOffset),
-               o => o.EllipseOffset);
+               defaultValue: new Thickness(2));
 
         public Thickness EllipseOffset
         {
-            get { return _ellipseOffset; }
-            private set { SetAndRaise(EllipseOffsetProperty, ref _ellipseOffset, value); }
+            get { return GetValue(EllipseOffsetProperty); }
+            set { SetValue(EllipseOffsetProperty, value); }
         }
 
-        #endregion
+        public bool ManuallyManageSizing
+        {
+            get => GetValue(ManuallyManageSizingProperty);
+            set => SetValue(ManuallyManageSizingProperty, value);
+        }
 
+        public static readonly StyledProperty<bool> ManuallyManageSizingProperty =
+            AvaloniaProperty.Register<ProgressRing, bool>(
+                nameof(ManuallyManageSizing), 
+                defaultValue: false);
 
         protected override void OnApplyTemplate(TemplateAppliedEventArgs e)
         {
             base.OnApplyTemplate(e);
-            double maxSideLength = Math.Min(this.Width, this.Height);
-            double ellipseDiameter = 0.1 * maxSideLength;
-            if (maxSideLength <= 40)
+            MaxSideLength = Math.Max(Width, Height);
+            if (!ManuallyManageSizing)
             {
-                ellipseDiameter += 1;
-            }
+                double ellipseDiameter = 0.1 * MaxSideLength;
+                if (MaxSideLength <= 40)
+                {
+                    ellipseDiameter += 1;
+                }
 
-            EllipseDiameter = ellipseDiameter;
-            MaxSideLength = maxSideLength;
-            EllipseOffset = new Thickness(0, maxSideLength / 2 - ellipseDiameter, 0, 0);
+                EllipseDiameter = ellipseDiameter;
+                EllipseOffset = new Thickness(0, MaxSideLength / 2 - ellipseDiameter, 0, 0);
+            }
             UpdateVisualStates();
         }
 
@@ -104,7 +109,10 @@ namespace AvaloniaProgressRing
         {
             base.OnPropertyChanged(change);
 
-            if (change.Property == IsActiveProperty)
+            if (change.Property == IsActiveProperty ||
+                change.Property == EllipseDiameterProperty ||
+                change.Property == EllipseOffsetProperty ||
+                change.Property == ManuallyManageSizingProperty)
             {
                 UpdateVisualStates();
             }
