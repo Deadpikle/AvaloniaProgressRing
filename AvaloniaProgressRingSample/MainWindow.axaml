@@ -1,30 +1,63 @@
-﻿<Window xmlns="https://github.com/avaloniaui"
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AvaloniaProgressRing"
         xmlns:progRing="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        Width="200"
-        Height="200"
+        mc:Ignorable="d"
+        d:DesignWidth="650"
+        d:DesignHeight="650"
+        Width="650"
+        Height="650"
         x:Class="AvaloniaProgressRingSample.MainWindow"
         x:CompileBindings="True"
         Title="AvaloniaProgressRingSample">
-  <StackPanel Orientation="Vertical">
-    <TextBlock Text="Avalonia Progress Ring Sample"
-               Margin="4,8,0,0"
-               FontWeight="Bold"/>
-    <CheckBox Content="Progress ring is active"
-              IsChecked="True"
-              Name="ProgressRingActive"
-              VerticalAlignment="Top"
-              Margin="20,5,0,0"/>
-	  <progRing:ProgressRing Width="80"
-							 Height="80"
-							 IsActive="{Binding ElementName=ProgressRingActive, Path=IsChecked}"
-							 HorizontalAlignment="Left"
-							 VerticalAlignment="Top"
-							 Foreground="Green"
-							 Margin="10,24,0,0"/>
-  </StackPanel>
+    <StackPanel Orientation="Vertical">
+        <TextBlock Text="Avalonia Progress Ring Sample"
+                   Margin="4,8,0,0"
+                   FontWeight="Bold" />
+        <CheckBox Content="Progress ring is active"
+                  IsChecked="True"
+                  Name="ProgressRingActive"
+                  VerticalAlignment="Top"
+                  Margin="20,5,0,0" />
+        <Label>Normal sizing</Label>
+        <progRing:ProgressRing Width="80"
+                               Height="80"
+                               IsActive="{Binding ElementName=ProgressRingActive, Path=IsChecked}"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Foreground="Green"
+                               Margin="10,24,0,10" />
+        <StackPanel Orientation="Horizontal"
+                    Spacing="16">
+            <StackPanel Orientation="Vertical">
+              <Label>Manual sizing sample - Small circles</Label>
+              <progRing:ProgressRing Width="50"
+                                    Height="50"
+                                    IsActive="{Binding ElementName=ProgressRingActive, Path=IsChecked}"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Foreground="Green"
+                                    ManuallyManageSizing="True"
+                                    EllipseDiameter="4"
+                                    EllipseOffset="0,25,0,0"
+                                    Margin="10,24,0,10" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+              <Label>Manual sizing sample - Large circles</Label>
+              <progRing:ProgressRing Width="400"
+                                    Height="400"
+                                    IsActive="{Binding ElementName=ProgressRingActive, Path=IsChecked}"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Foreground="Green"
+                                    ManuallyManageSizing="True"
+                                    EllipseDiameter="35"
+                                    EllipseOffset="0,200,0,0"
+                                    Margin="10,24,0,0" />
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
 </Window>
